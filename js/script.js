@@ -13,14 +13,16 @@ console.log(price);
 
 // L’output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
+let finalPrice = 0
+
 if (age < 18) {
 
     // va applicato uno sconto del 20% per i minorenni
 
-    let discountYoung = parseFloat(price * 20 / 100).toFixed(2);
+    let discountYoung = (price * 20 / 100);
     console.log("Sconto per i miorenni " + (discountYoung) + "€");
 
-    let finalPrice = parseFloat(price - discountYoung).toFixed(2);
+    finalPrice = (price - discountYoung).toFixed(2);
 
     console.log("Prezzo finale minorenni " + (finalPrice) + "€" );
 
@@ -30,21 +32,20 @@ if (age < 18) {
 
     // va applicato uno sconto del 40% per gli over 65.
 
-    let discountOlder = parseFloat(price * 40 / 100).toFixed(2);
+    let discountOlder = (price * 40 / 100);
     console.log("Sconto per gli over 65 " + (discountOlder) + "€");
 
-    let finalPrice = parseFloat(price - discountOlder).toFixed(2);
+    finalPrice = (price - discountOlder).toFixed(2);
 
     console.log("Prezzo finale per gli over 65 " + (finalPrice) + "€" );
 
     document.getElementById("random_id").innerHTML = "Il tuo biglietto costerà " + (finalPrice) + "€";
 
 }  else {
-     let finalPrice = price;
 
-     console.log("Prezzo finale per tutti gli altri " + (finalPrice) + "€" );
+     console.log("Prezzo finale per tutti gli altri " + (price) + "€" );
 
-     document.getElementById("random_id").innerHTML = "Il tuo biglietto costerà " + (finalPrice) + "€";
+     document.getElementById("random_id").innerHTML = "Il tuo biglietto costerà " + (price) + "€";
 }
     
 
