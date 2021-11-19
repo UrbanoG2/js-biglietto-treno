@@ -19,7 +19,7 @@ if (age < 18) {
 
     // va applicato uno sconto del 20% per i minorenni
 
-    let discountYoung = (price * 20 / 100);
+    let discountYoung = (price * 20 / 100).toFixed(2);
     console.log("Sconto per i miorenni " + (discountYoung) + "€");
 
     finalPrice = (price - discountYoung).toFixed(2);
@@ -32,7 +32,7 @@ if (age < 18) {
 
     // va applicato uno sconto del 40% per gli over 65.
 
-    let discountOlder = (price * 40 / 100);
+    let discountOlder = (price * 40 / 100).toFixed(2);
     console.log("Sconto per gli over 65 " + (discountOlder) + "€");
 
     finalPrice = (price - discountOlder).toFixed(2);
