@@ -3,13 +3,13 @@
 let numKm = parseInt(prompt("Quanti kilometri vuoi percorrere?"));
 let age = parseInt(prompt("Quanti anni hai?"));
 
-console.log("Km " + numKm, "Age " + age);
+console.log("Km " + numKm, "Età " + age);
 
 // Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole:
 // il prezzo del biglietto è definito in base ai km (0.21 € al km)
 
 let price = parseFloat(numKm * 0.21 +"€").toFixed(2);
-console.log("Total price " + price);
+console.log("Prezzo totale " + price);
 
 // L’output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
