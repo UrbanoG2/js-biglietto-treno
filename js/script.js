@@ -38,8 +38,8 @@ if (age < 18) {
 
     document.getElementById("random_id").innerHTML = "Il tuo biglietto costerà " + (finalPrice) + "€";
 
-}  else (age >= 18 || age <= 65) {
-     let finalPrice = (price).toFixed(2);
+}  else {
+     let finalPrice = price;
 
      console.log("Prezzo finale per tutti gli altri " + (finalPrice) + "€" );
 
