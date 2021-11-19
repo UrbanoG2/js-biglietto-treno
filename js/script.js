@@ -3,13 +3,13 @@
 let numKm = parseInt(prompt("Quanti kilometri vuoi percorrere?"));
 let age = parseInt(prompt("Quanti anni hai?"));
 
-console.log(numKm, age);
+console.log("Km " + numKm, "Age " + age);
 
 // Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole:
 // il prezzo del biglietto è definito in base ai km (0.21 € al km)
 
 let price = parseFloat(numKm * 0.21 +"€").toFixed(2);
-console.log(price);
+console.log("Total price " + price);
 
 // L’output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
@@ -24,7 +24,7 @@ if (age < 18) {
 
     finalPrice = (price - discountYoung).toFixed(2);
 
-    console.log("Prezzo finale minorenni " + (finalPrice) + "€" );
+    console.log("Prezzo finale " + (finalPrice) + "€" );
 
     document.getElementById("random_id").innerHTML = "Il tuo biglietto costerà " + (finalPrice) + "€";
 
@@ -37,13 +37,13 @@ if (age < 18) {
 
     finalPrice = (price - discountOlder).toFixed(2);
 
-    console.log("Prezzo finale per gli over 65 " + (finalPrice) + "€" );
+    console.log("Prezzo finale " + (finalPrice) + "€" );
 
     document.getElementById("random_id").innerHTML = "Il tuo biglietto costerà " + (finalPrice) + "€";
 
 }  else {
 
-     console.log("Prezzo finale per tutti gli altri " + (price) + "€" );
+     console.log("Prezzo finale per età compresa tra i 18 e i 65 " + (price) + "€" );
 
      document.getElementById("random_id").innerHTML = "Il tuo biglietto costerà " + (price) + "€";
 }
